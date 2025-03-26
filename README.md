@@ -5,6 +5,19 @@ Este é um jogo de Bingo interativo, desenvolvido com React, Tailwind CSS e Type
 
 Quer testar o projeto? Click no Link ao Lado ([BingoChallenge](https://bingo-challenge.vercel.app/).)
 
+---
+Optei por CSR (renderização no lado do cliente) para este projeto, pois ele oferece várias vantagens para um jogo interativo como o Bingo:
+
+Desempenho e Interatividade: O CSR permite uma atualização rápida e eficiente no navegador, sem necessidade de chamadas constantes ao servidor, garantindo uma experiência fluida e responsiva.
+
+Simplicidade: O jogo não requer um backend. Toda a lógica do sorteio e interação com a cartela é feita no cliente, simplificando a arquitetura e reduzindo a carga no servidor.
+
+Economia de recursos: Com o CSR, o servidor apenas serve arquivos estáticos (HTML, CSS, JS), e o cliente processa as interações, o que torna a aplicação mais escalável e econômica.
+
+Experiência do Usuário: O jogo é dinâmico e sem recarregamentos de página, proporcionando uma interação em tempo real e uma experiência mais intuitiva e divertida.
+
+---
+
 ## 📂 Estrutura do Projeto
 
 ```
@@ -67,6 +80,8 @@ Animação de Cor: A palavra "BINGO" possui uma animação de rotação de cores
 Modo Escuro: Implementar uma alternativa para alternar entre modos claro e escuro.
 
 Sistema de Pontuação: Adicionar contagem de pontos por cada "Bingo".
+
+Exibir a cartela gerada em formato de tabela para impressão.
 
 ---
 
