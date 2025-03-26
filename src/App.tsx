@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { generateBingoCard } from './utils/generateCard';
 import ActionsBtn from './components/bingo/ActionsBtn';
 import HeroAside from './components/hero/HeroAside';
+import { checkBingo } from './utils/isBingo';
 
 const TOTAL = 75;
 
@@ -29,15 +30,27 @@ function App() {
 
   const handleReset = () => setDrawn([]);
 
+  const bingo = checkBingo(card, drawn);
+
   return (
     <Container >
       <Header>
-        <h1>React App</h1>
+      {bingo     
+           ? (
+            <p className="flex-row flex items-center text-4xl font-bold">
+              🎉
+              <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 filter animate-hue-rotate">  BINGOOOOOO! </h1>
+              🎉
+            </p>
+          )
+           : <h1 className="sm:text-5xl font-bold text-3xl">Jogue bingo e se divirta!</h1>      
+         }        
+
       </Header>
       <HeroContainer>
         <BingoBoard drawnNumbers={drawn}/>
         <HeroAside>          
-          <ActionsBtn drawnNumbers={drawn} onDraw={handleDraw} onReset={handleReset} />
+          <ActionsBtn drawnNumbers={drawn} onDraw={handleDraw} onReset={handleReset} isBlocked={bingo} />
           <BingoCard card={card} drawnNumbers={drawn} />
         </HeroAside>
       </HeroContainer>

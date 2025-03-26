@@ -4,9 +4,10 @@ type Props = {
   drawnNumbers: number[];
   onDraw: () => void;
   onReset: () => void;
+  isBlocked: boolean;
 };
 
-const ActionsBtn: React.FC<Props> = ({ drawnNumbers, onDraw, onReset }) => {
+const ActionsBtn: React.FC<Props> = ({ drawnNumbers, onDraw, onReset, isBlocked }) => {
   const maxNumbers = 75;
   const remaining = maxNumbers - drawnNumbers.length;
 
@@ -15,7 +16,7 @@ const ActionsBtn: React.FC<Props> = ({ drawnNumbers, onDraw, onReset }) => {
       <div className="flex gap-4">
         <button
           onClick={onDraw}
-          disabled={drawnNumbers.length >= maxNumbers}
+          disabled={drawnNumbers.length >= maxNumbers || isBlocked}
           className="px-6 py-2 bg-blue-600 text-white font-bold rounded hover:bg-blue-700 transition disabled:opacity-40"
         >
           Sortear Número
@@ -35,5 +36,6 @@ const ActionsBtn: React.FC<Props> = ({ drawnNumbers, onDraw, onReset }) => {
     </div>
   );
 };
+
 
 export default ActionsBtn;
