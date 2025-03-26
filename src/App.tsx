@@ -1,14 +1,18 @@
+// Pagina principal do projeto e unica neste momento
+// Se utiliza da pasta utils para acoplar as funções de geração de cartela e verificação de bingo
+// Se utiliza da pasta components para acoplar os componentes de bingo, header e container
+
 import './App.css';
 import Container from './components/container/Container';
 import Header from './components/header/Header';
 import HeroContainer from './components/hero/HeroContainer';
 import BingoBoard from './components/bingo/BingoBoard';
 import BingoCard from './components/bingo/BingoCard';
-import { useState } from 'react';
-import { generateBingoCard } from './utils/generateCard';
 import ActionsBtn from './components/bingo/ActionsBtn';
 import HeroAside from './components/hero/HeroAside';
-import { checkBingo } from './utils/isBingo';
+import { useState } from 'react';
+import { generateBingoCard } from './utils/generateCard';
+import { checkBingo, } from './utils/isBingo';
 
 const TOTAL = 75;
 

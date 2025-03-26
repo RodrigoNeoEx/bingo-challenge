@@ -1,3 +1,6 @@
+// Componente responsável pelos botões de ação do bingo
+// Logica deste componente foi descentralizada para evitar acumulo de função em um único componente
+
 import React from "react";
 
 type Props = {

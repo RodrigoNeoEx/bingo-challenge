@@ -1,3 +1,9 @@
+// Componente responsável por estilizar e gerar a cartela de bingo
+// Recebe Props card e drawnNumbers
+// card: cartela de bingo
+// drawnNumbers: números sorteados
+// Retorna a cartela de bingo com os números sorteados marcados
+
 import React from "react";
 import type { GenerateCards as BingoCardType } from "../../utils/generateCard";
 import CardPrinter from "./CardPrinter";

@@ -1,3 +1,5 @@
+// código responsável por gerar cartelas de bingo e números aleatórios
+
 export type GenerateCards = (number | "FREE")[][];
 
 const getRandomNumbers = (min: number, max: number, count: number): number[] => {

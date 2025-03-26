@@ -1,4 +1,5 @@
 // Componente responsavel por estilizar e gerar a cartela em formato de tabela para impressão
+// Este componente não possibilida custumização para receber outros valores devido sua finalidade de impressão especifica
 
 import React from "react";
 import type { GenerateCards as BingoCardType } from "../../utils/generateCard";

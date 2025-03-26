@@ -1,3 +1,8 @@
+// Componente responsável por estilizar e gerar a board dos sorteios
+// Recebe Props drawnNumbers
+// drawnNumbers: números sorteados
+// Retorna a board com os números sorteados e os deixa marcados
+
 import React from "react";
 
 type BingoBoardProps = {

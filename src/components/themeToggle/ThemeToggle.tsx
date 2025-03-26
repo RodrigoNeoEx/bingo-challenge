@@ -1,3 +1,9 @@
+// Utilizado local storage por ser uma aplicação para teste tecnico e não ter necessidade de persistir o tema em outros dispositivos.
+// O tema é alternado entre claro e escuro, e o estado é salvo no local storage para persistir entre recarregamentos da página.
+// Não foi utilizado o Context API para gerenciar o tema, pois a aplicação é CSR (Client-Side Rendering) e SPA (Single Page Application).
+// Como o estado do tema é local e pode ser alternado diretamente no cliente, não há necessidade de um provider global ou context para compartilhar esse estado entre componentes.
+
+
 import React, { useEffect, useState } from 'react';
 
 const ThemeToggle: React.FC = () => {

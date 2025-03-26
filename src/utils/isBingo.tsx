@@ -1,4 +1,4 @@
-// src/utils/isBingo.ts
+// código responsável por verificar se houve bingo (horizontal, vertical ou diagonal)
 
 import type { GenerateCards } from "./generateCard"; // Mantendo o nome 'BingoCards' conforme solicitado
 
