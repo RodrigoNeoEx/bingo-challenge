@@ -8,9 +8,9 @@ interface HeroAsideProps {
 
 const HeroAside: React.FC<HeroAsideProps> = ({ children }) => {
   return (
-    <div className="flex-col justify-items-center items-center mt-5">
+    <aside className="flex-col justify-items-center items-center mt-5">
       {children}
-    </div>
+    </aside>
   );
 };
 

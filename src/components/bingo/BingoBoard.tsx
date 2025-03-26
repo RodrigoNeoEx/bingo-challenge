@@ -1,7 +1,7 @@
 // Componente responsável por estilizar e gerar a board dos sorteios
 // Recebe Props drawnNumbers
 // drawnNumbers: números sorteados
-// Retorna a board com os números sorteados e os deixa marcados
+// Retorna a board com os números sorteados e os deixamarcados
 
 import React from "react";
 

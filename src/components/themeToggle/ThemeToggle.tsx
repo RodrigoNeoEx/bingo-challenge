@@ -35,8 +35,8 @@ const ThemeToggle: React.FC = () => {
       className="p-2 text-gray-900 dark:text-white font-bold w-1/5"
     >
       {isDarkMode 
-        ? <div className='leading-5'>🌙<br/>Tema Escuro</div> 
-        : <div className='leading-5'>☀️<br/>Tema Claro</div>
+        ? <span className='leading-5'>🌙<br/>Tema Escuro</span> 
+        : <span className='leading-5'>☀️<br/>Tema Claro</span>
       }
       
     </button>
