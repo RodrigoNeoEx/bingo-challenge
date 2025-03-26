@@ -35,11 +35,12 @@ function App() {
   return (
     <Container >
       <Header>
+      
       {bingo     
            ? (
-            <p className="flex-row flex items-center text-4xl font-bold">
+            <p className="flex-row flex items-center text-4xl font-bold w-10/12 justify-center">
               🎉
-              <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 filter animate-hue-rotate">  BINGOOOOOO! </h1>
+              <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500 filter animate-hue-rotate">BINGOOOOOO!</h1>
               🎉
             </p>
           )
