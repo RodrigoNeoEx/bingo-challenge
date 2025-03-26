@@ -27,7 +27,7 @@ const BingoCard: React.FC<Props> = ({ card, drawnNumbers }) => {
           return (
             <div
               key={index}
-              className={`w-16 h-16 flex items-center justify-center text-lg font-semibold border border-gray-300 ${
+              className={` flex items-center justify-center text-lg font-semibold border border-gray-300 w-16 h-16  ${
                 cell === "FREE"
                   ? "bg-yellow-300 text-black"
                   : isMarked
