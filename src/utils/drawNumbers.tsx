@@ -1,3 +1,5 @@
+// Função responsável por sortear um número aleatório de 1 a 75 e adicionar à lista de números sorteados
+
 export const drawNumber = (drawn: number[], total: number): number[] => {
   if (drawn.length >= total) return drawn;
 
