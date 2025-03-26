@@ -72,16 +72,15 @@ Interface Responsiva: Design adaptável a diferentes tamanhos de tela.
 ## 💡 Funcionalidade Extra
 
 Animação de Cor: A palavra "BINGO" possui uma animação de rotação de cores para dar destaque.
+Exibir a cartela gerada em formato de tabela para impressão através de um iframe.
+Implementado opção para alternar entre modos claro e escuro.
 
 ---
 
 ## 🛠️ Melhorias Futuras
 
-Modo Escuro: Implementar uma alternativa para alternar entre modos claro e escuro.
-
 Sistema de Pontuação: Adicionar contagem de pontos por cada "Bingo".
 
-Exibir a cartela gerada em formato de tabela para impressão.
 
 ---
 
