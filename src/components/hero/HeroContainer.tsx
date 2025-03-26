@@ -1,10 +1,8 @@
-const HeroContainer = () => {
+const HeroContainer = ({children}:any) => {
   return (
-    <div>
-      <section className='bg-red-500 text-white text-center p-4'>
-        <h1>React App</h1>
-      </section>
-    </div>
+    <section className='bg-blue-100 text-white text-center p-4 grid md:grid-cols-2'>
+      {children}
+    </section>
   )
 }
 
