@@ -16,6 +16,8 @@ Economia de recursos: Com o CSR, o servidor apenas serve arquivos estáticos (HT
 
 Experiência do Usuário: O jogo é dinâmico e sem recarregamentos de página, proporcionando uma interação em tempo real e uma experiência mais intuitiva e divertida.
 
+Utilizado "Tipagem" no mesmo arquivo devido entender que o projeto não escalaria
+
 ---
 
 ## 📂 Estrutura do Projeto
