@@ -1,7 +1,7 @@
-const Header = () => {
+const Header = ({children}:any) => {
   return (
-    <header>
-      <h1>Header</h1>
+    <header className="h-20 bg-blue-400 text-white text-center flex items-center justify-center">
+      {children}
     </header>
   );
 }
