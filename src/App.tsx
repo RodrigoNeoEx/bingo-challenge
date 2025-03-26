@@ -13,6 +13,7 @@ import HeroAside from './components/hero/HeroAside';
 import { useState } from 'react';
 import { generateBingoCard } from './utils/generateCard';
 import { checkBingo, } from './utils/isBingo';
+import { drawNumber } from './utils/drawNumbers';
 
 const TOTAL = 75;
 
@@ -22,14 +23,7 @@ function App() {
   const [card] = useState(() => generateBingoCard()); // ✅ isso fixa a cartela
 
   const handleDraw = () => {
-    if (drawn.length >= TOTAL) return;
-
-    let newNumber: number;
-    do {
-      newNumber = Math.floor(Math.random() * TOTAL) + 1;
-    } while (drawn.includes(newNumber));
-
-    setDrawn((prev) => [...prev, newNumber].sort((a, b) => a - b));
+    setDrawn((prev) => drawNumber(prev, TOTAL));
   };
 
   const handleReset = () => setDrawn([]);
