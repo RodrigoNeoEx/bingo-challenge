@@ -1,5 +1,6 @@
 import React from "react";
 import type { GenerateCards as BingoCardType } from "../../utils/generateCard";
+import CardPrinter from "./CardPrinter";
 
 type Props = {
   card: BingoCardType;
@@ -40,6 +41,7 @@ const BingoCard: React.FC<Props> = ({ card, drawnNumbers }) => {
           );
         })}
       </div>
+      <CardPrinter card={card} />
     </div>
   );
 };
