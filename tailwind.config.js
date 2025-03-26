@@ -13,6 +13,10 @@ module.exports = {
           '100%': { filter: 'hue-rotate(360deg)' },
         },
       },
+      backgroundImage: {
+        'light': 'linear-gradient(180deg, rgba(75 152 255) 10%, rgba(219,234,254,1) 100%)',
+        'dark': 'linear-gradient(180deg, rgba(1,10,20,1) 10%, rgba(0,68,159,1) 100%)', // Exemplo de gradiente para o modo escuro
+      },
     },
   },
   plugins: [],

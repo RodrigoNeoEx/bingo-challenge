@@ -28,7 +28,7 @@ const ActionsBtn: React.FC<Props> = ({ drawnNumbers, onDraw, onReset, isBlocked 
           Reiniciar
         </button>
       </div>
-      <span className="text-sm text-gray-600">
+      <span className="text-sm text-gray-600 dark:text-white">
         {remaining > 0
           ? `${remaining} número(s) restantes`
           : "Todos os números foram sorteados!"}
