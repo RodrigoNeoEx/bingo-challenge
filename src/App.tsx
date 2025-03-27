@@ -18,6 +18,7 @@ function App() {
   const [highlightedNumber, setHighlightedNumber] = useState<number | null>(null); 
   const [isDrawing, setIsDrawing] = useState(false); 
   const [card] = useState(() => generateBingoCard()); 
+  
   const handleDraw = () => {
     setIsDrawing(true); 
     let timer: NodeJS.Timeout;  

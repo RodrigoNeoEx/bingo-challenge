@@ -1,6 +1,6 @@
 // código responsável por verificar se houve bingo (horizontal, vertical ou diagonal)
 
-import type { GenerateCards } from "./generateCard"; // Mantendo o nome 'BingoCards' conforme solicitado
+import type { GenerateCards } from "./generateCard";
 
 // Função que verifica se houve bingo (horizontal, vertical ou diagonal)
 export const checkBingo = (card: GenerateCards, drawnNumbers: number[]): boolean => {

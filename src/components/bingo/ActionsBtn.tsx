@@ -1,4 +1,4 @@
-// Desc: Componente que renderiza os botões de ações do jogo de bingo
+// Componente que renderiza os botões de ações do jogo de bingo
 // Botão "Sortear Número" sorteia um número aleatório de 1 a 75
 // Botão "Reiniciar" limpa a lista de números sorteados
 // Exibe a quantidade de números restantes para sorteio
