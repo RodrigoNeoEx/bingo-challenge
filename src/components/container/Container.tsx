@@ -8,7 +8,7 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({children}) => {
   return (
-    <section className="bg-light2 dark:bg-dark2 text-white text-center w-full h-screen overflow-scroll">
+    <section className="bg-light2 dark:bg-dark2 text-white text-center w-full h-screen overflow-y-auto">
       {children}
     </section>
   );
