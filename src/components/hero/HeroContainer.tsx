@@ -8,7 +8,7 @@ interface HeroContainerProps {
 
 const HeroContainer: React.FC<HeroContainerProps> = ({ children }) => {
   return (
-    <section className='bg-blue-100 text-white text-center p-4 grid md:grid-cols-2 xl:justify-self-center dark:bg-[#00449f]'>
+    <section className='text-white text-center p-4 grid md:grid-cols-2 xl:justify-self-center'>
       {children}
     </section>
   )

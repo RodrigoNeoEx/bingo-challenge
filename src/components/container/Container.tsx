@@ -8,7 +8,7 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({children}) => {
   return (
-    <section className="bg-blue-100 dark:bg-[#00449f] text-white text-center w-full h-screen">
+    <section className="bg-light2 dark:bg-dark2 text-white text-center w-full h-screen">
       {children}
     </section>
   );

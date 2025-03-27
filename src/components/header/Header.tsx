@@ -10,7 +10,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ children }) => {
   return (
-    <header className="h-20  text-black text-center flex items-center justify-center  dark:text-gray-100 bg-light dark:bg-dark">
+    <header className="h-20  text-black text-center flex items-center justify-center  dark:text-gray-100 bg-light dark:bg-dark shadow-inset-blue">
       {children}
       <ThemeToggle />
     </header>
