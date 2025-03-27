@@ -74,6 +74,7 @@ Interface Responsiva: Design adaptável a diferentes tamanhos de tela.
 ## 💡 Funcionalidade Extra
 
 Animação de Cor: A palavra "BINGO" possui uma animação de rotação de cores para dar destaque.
+Animação de Roleta: O board se colore aleatoriamente simulando um sorteio.
 Exibir a cartela gerada em formato de tabela para impressão através de um iframe.
 Implementado opção para alternar entre modos claro e escuro.
 
