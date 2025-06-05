@@ -10,7 +10,7 @@ import React, { useState } from "react";
 
 type Props = {
   drawnNumbers: number[];
-  onDraw: (num: number) => void; 
+  onDraw: () => void;
   onReset: () => void;
   isBlocked: boolean;
 };
@@ -21,11 +21,10 @@ const ActionsBtn: React.FC<Props> = ({ drawnNumbers, onDraw, onReset, isBlocked 
   const remaining = maxNumbers - drawnNumbers.length;
 
   const handleDraw = () => {
-    setDisabled(true); 
-    const randomDraw = Math.floor(Math.random() * maxNumbers) + 1;
-    onDraw(randomDraw);
+    setDisabled(true);
+    onDraw();
     setTimeout(() => {
-      setDisabled(false); 
+      setDisabled(false);
     }, 2000);
   };
 

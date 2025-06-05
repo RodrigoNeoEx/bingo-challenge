@@ -124,6 +124,16 @@ npm run lint: Executa o linting para verificar problemas de código.
 npm run start: Inicia a aplicação após a construção.
 ```
 
+## 🧪 Como Executar Testes
+
+Após instalar as dependências com `npm install`, execute:
+
+```bash
+npm test
+```
+
+Este comando utiliza o **react-scripts** para rodar os testes configurados no projeto.
+
 ---
 
 ## 📮 Contato

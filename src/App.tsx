@@ -24,9 +24,9 @@ function App() {
     let timer: NodeJS.Timeout;  
 
     timer = setInterval(() => {
-      const randomIndex = Math.floor(Math.random() * 75);
-      setHighlightedNumber(randomIndex); 
-    }, 100); 
+      const randomIndex = Math.floor(Math.random() * 75) + 1;
+      setHighlightedNumber(randomIndex);
+    }, 100);
   
     setTimeout(() => {
       const drawnNumber = drawNumber(drawn, TOTAL); 
